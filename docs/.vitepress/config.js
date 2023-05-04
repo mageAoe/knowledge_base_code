@@ -2,7 +2,7 @@ export default {
   title: 'knowledge base',
   titleTemplate: '知识库',
   description: 'Just playing around.',
-  base: process.env.NODE_ENV === 'production' ? '/succinct/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/knowledge_base_ui/' : '/',
   themeConfig: {
     siteTitle: "knowledge base",
     nav: [
