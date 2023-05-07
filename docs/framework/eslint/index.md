@@ -5,7 +5,7 @@
 
 ```json
 {
-	    "no-": "off",
+	  "no-": "off",
       "no-debugger":"off",
       "no-console": "off",
       "no-empty":"off",

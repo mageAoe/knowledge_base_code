@@ -2,7 +2,7 @@ export default {
   title: 'knowledge base',
   titleTemplate: '知识库',
   description: 'Just playing around.',
-  base: process.env.NODE_ENV === 'production' ? '/knowledge_base_ui/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/' : '/',
   themeConfig: {
     siteTitle: "knowledge base",
     nav: [
@@ -57,6 +57,10 @@ export default {
                     {
                         text: "VUE2",
                         link: "/blog/Vue2",
+                    },
+                    {
+                        text: "CSS常见问题",
+                        link: "/CSS/one",
                     }
                 ],
             }
@@ -80,8 +84,35 @@ export default {
                     {
                         text: "uni-app",
                         link: "/framework/uni-app/index",
+                    },
+                    {
+                        text: "GIT",
+                        link: "/framework/gitshell/index",
+                    },
+                    {
+                        text: "CSS",
+                        link: "/CSS/index",
+                    },
+                    {
+                        text: "Mock",
+                        link: "/framework/Mock/index",
                     }
                 ],
+            }
+        ],
+        "/func": [
+            {
+                text: "函数",
+                items: [
+                    {
+                        text: "普通函数",
+                        link: "/func/ordinary",
+                    },
+                    {
+                        text: "高级函数",
+                        link: "/func/senior",
+                    }
+                ]
             }
         ]
     },
