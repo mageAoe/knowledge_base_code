@@ -1,36 +1,25 @@
 # knowledge_base
 
 #### Hello, welcome to scq's knowledge base
+#### 如果喜欢，欢迎前来star
+
+<img src="./image/1.jpg" />
+
 
 <div style="margin-top: 50px">
-    <a style="border-radius: 20px;
+    <a href='/guild/installation.html'
+    style="border-radius: 20px;
     padding: 0 20px;
     line-height: 38px;
     font-size: 14px;border-color:#6ee7b7;background-color:#10b981;color:#fff;display:inline-block">get started</a>
 
-<a style="border-radius: 20px;
+<a  href='https://github.com/mageAoe/knowledge_base_ui' style="border-radius: 20px;
     padding: 0 20px;
     line-height: 38px;
     font-size: 14px;border: 1px solid #ccc;display:inline-block">view on github</a>
 </div>
 
 ---
-layout: home
-
-title: VitePress
-titleTemplate: Vite & Vue Powered Static Site Generator
-
-hero:
-  name: VitePress
-  text: Vite & Vue Powered Static Site Generator
-  tagline: Simple, powerful, and fast. Meet the modern SSG framework you've always wanted.
-  actions:
-    - theme: brand
-      text: Get Started
-      link: /guide/what-is-vitepress
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/vuejs/vitepress
 
 features:
   - icon: 📝

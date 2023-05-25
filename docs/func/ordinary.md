@@ -246,3 +246,50 @@ function startMove(dom){
     }, 30);
 }
 ```
+
+## 深拷贝(一)
+
+```js
+function deepClone(origin,target){
+    var target = target || {},
+        toStr = Object.prototype.toString,
+        arrStr = "[Object Array]";
+    for(var prop in origin){
+        if(origin.hasOwnProperty(prop)){ //hasOwnProperty
+            if(typeof(origin[prop] ) == 'object'){
+                if(toStr.call(origin[prop]) == arrStr){
+                    target[prop] = []
+                }else{
+                    target[prop] = {}
+                }
+                deepClone(origin[prop],target[prop])
+            }else{
+                target[prop] = origin[prop]
+            }
+        }
+    }
+}
+```
+
+## 深拷贝(二)
+
+```js
+function deepClone(origin,target){
+    var target = target || {};
+    for(var prop in origin){
+        if(origin.hasOwnProperty(prop)){ //hasOwnProperty
+            if(typeof(origin[prop] ) == 'object'){
+                if(Array.isArray(prop)){
+                    target[prop] = []
+                }else{
+                    target[prop] = {}
+                }
+                deepClone(origin[prop],target[prop])
+            }else{
+                target[prop] = origin[prop]
+            }
+        }
+    }
+}
+
+```
