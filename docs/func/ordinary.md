@@ -293,3 +293,30 @@ function deepClone(origin,target){
 }
 
 ```
+
+## 利用 new Set给数组去重
+
+> new Set() 能去除 string类型，数字类型 得重复向。但是不能去除对象得重复项
+
+```js
+const list =[
+    { name: "张三", age: 18, address: "北京" },
+    { name: "李四", age: 20, address: "天津" },
+    { name: "张三", age: 18, address: "北京" },
+]
+const strings = list.map((item) => JSON.stringify(item))
+const removeDupList = Array.from(new Set(strings))
+const result = removeDupList.map((item) => JSON.parse(item))
+console.log('result',typeof result)
+```
+
+- 利用new Map给数组对象去重
+
+```js
+let map = new Map();
+for (let item of list) {
+    map.set(item.id, item);
+ }
+let result = [...map.values()]
+```
+

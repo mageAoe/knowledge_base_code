@@ -45,6 +45,14 @@ export default [
             {
                 text: "深入了解js变量提升",
                 link: "/blog/2023/5/25/Hoisting",
+            },
+            {
+                text: "html常见问题",
+                link: "/blog/2023/6/10/htmlQuestion",
+            },
+            {
+                text: "小程序中使用npm包",
+                link: "/blog/2023/6/10/weichatApp",
             }
         ],
     }
