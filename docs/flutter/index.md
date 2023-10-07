@@ -9,6 +9,10 @@ https://chocolatey.org/install
 > 首先进入这个网站https://chocolatey.org/install#individual
 >
 > 将网站的命令复制到 管理员运行的powershell 里面回车
+> 访问不了的可以用我下面的命令
+>```shell
+> Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex  ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+> ```
 >
 > ```shell
 > // 查看版本号
@@ -64,7 +68,7 @@ https://chocolatey.org/install
 
 https://www.oracle.com/java/technologies/downloads/#jdk19-windows
 
-![image-20230521185129413](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185129413.png)
+![image-20230521185129413](../image/flutter-assets/image-20230521185129413.png)
 
 #### 配置JDK（19.0.2版本）
 
@@ -72,7 +76,7 @@ https://www.oracle.com/java/technologies/downloads/#jdk19-windows
 
 1、系统变量 里面新增JAVA_HOME，设置值为java sdk 根目录：
 
-![image-20230521185155379](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185155379.png)
+![image-20230521185155379](../image/flutter-assets/image-20230521185155379.png)
 
 2、系统变量 找到Path 在Path环境变量里面增加如下代码 (提示jdk19无需配置jre) 
 
@@ -80,59 +84,59 @@ https://www.oracle.com/java/technologies/downloads/#jdk19-windows
 
 win10、win11中的配
 
-![image-20230521185223097](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185223097.png)
+![image-20230521185223097](../image/flutter-assets/image-20230521185223097.png)
 
 ### 电脑上下载安装Android Studio（2022.1.1 Patch 1）
 
 https://developer.android.google.cn/studio
 
-![image-20230521185259396](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185259396.png)
+![image-20230521185259396](../image/flutter-assets/image-20230521185259396.png)
 
-![image-20230521185308624](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185308624.png)
+![image-20230521185308624](../image/flutter-assets/image-20230521185308624.png)
 
-![image-20230521185317705](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185317705.png)
+![image-20230521185317705](../image/flutter-assets/image-20230521185317705.png)
 
-![image-20230521185326585](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185326585.png)
+![image-20230521185326585](../image/flutter-assets/image-20230521185326585.png)
 
-![image-20230521185335850](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185335850.png)
+![image-20230521185335850](../image/flutter-assets/image-20230521185335850.png)
 
-![image-20230521185344216](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185344216.png)
+![image-20230521185344216](../image/flutter-assets/image-20230521185344216.png)
 
-![image-20230521185353327](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185353327.png)
+![image-20230521185353327](../image/flutter-assets/image-20230521185353327.png)
 
-![image-20230521185402333](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185402333.png)
+![image-20230521185402333](../image/flutter-assets/image-20230521185402333.png)
 
-![image-20230521185421267](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185421267.png)
+![image-20230521185421267](../image/flutter-assets/image-20230521185421267.png)
 
-![image-20230521185432408](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185432408.png)
+![image-20230521185432408](../image/flutter-assets/image-20230521185432408.png)
 
-![image-20230521185443063](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185443063.png)
+![image-20230521185443063](../image/flutter-assets/image-20230521185443063.png)
 
-![image-20230521185452754](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185452754.png)
+![image-20230521185452754](../image/flutter-assets/image-20230521185452754.png)
 
-![image-20230521185501768](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185501768.png)
+![image-20230521185501768](../image/flutter-assets/image-20230521185501768.png)
 
-![image-20230521185510776](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185510776.png)
+![image-20230521185510776](../image/flutter-assets/image-20230521185510776.png)
 
-![image-20230521185521271](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185521271.png)
+![image-20230521185521271](../image/flutter-assets/image-20230521185521271.png)
 
-![image-20230521185530352](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185530352.png)
+![image-20230521185530352](../image/flutter-assets/image-20230521185530352.png)
 
-![image-20230521185539591](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185539591.png)
+![image-20230521185539591](../image/flutter-assets/image-20230521185539591.png)
 
-![image-20230521185550120](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185550120.png)
+![image-20230521185550120](../image/flutter-assets/image-20230521185550120.png)
 
-![image-20230521185601872](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185601872.png)
+![image-20230521185601872](../image/flutter-assets/image-20230521185601872.png)
 
-![image-20230521185611370](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185611370.png)
+![image-20230521185611370](../image/flutter-assets/image-20230521185611370.png)
 
-![image-20230521185619960](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185619960.png)
+![image-20230521185619960](../image/flutter-assets/image-20230521185619960.png)
 
-![image-20230521185629329](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185629329.png)
+![image-20230521185629329](../image/flutter-assets/image-20230521185629329.png)
 
-![image-20230521185638535](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185638535.png)
+![image-20230521185638535](../image/flutter-assets/image-20230521185638535.png)
 
-![image-20230521185648710](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185648710.png)
+![image-20230521185648710](../image/flutter-assets/image-20230521185648710.png)
 
 ### 电脑上面下载配置Flutter Sdk（所有版本方法一 样）
 
@@ -150,7 +154,7 @@ https://flutter.dev/docs/development/tools/sdk/releases#windows
 
 windows10、windows11
 
-![image-20230521185754146](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185754146.png)
+![image-20230521185754146](../image/flutter-assets/image-20230521185754146.png)
 
 ### 电脑上配置Flutter国内镜像
 
@@ -167,7 +171,7 @@ FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
 PUB_HOSTED_URL: https://pub.flutter-io.cn
 ```
 
-![image-20230521185901862](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185901862.png)
+![image-20230521185901862](../image/flutter-assets/image-20230521185901862.png)
 
 Flutter 社区镜像
 
@@ -185,21 +189,21 @@ PUB_HOSTED_URL: https://mirrors.tuna.tsinghua.edu.cn/dart-pub
 
 ### 运行 flutter doctor命令检测环境是否配置成功
 
-![image-20230521185942816](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521185942816.png)
+![image-20230521185942816](../image/flutter-assets/image-20230521185942816.png)
 
 第一次执行可能会提示下面错误：
 
 #### 错误一：cmdline-tools component is missing
 
-![image-20230521190008612](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190008612.png)
+![image-20230521190008612](../image/flutter-assets/image-20230521190008612.png)
 
 #### 错误二：Visual Studio not installed 如果只是开发 Flutter APP可以忽略此错误信息
 
-![image-20230521190028606](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190028606.png)
+![image-20230521190028606](../image/flutter-assets/image-20230521190028606.png)
 
 #### 错误三： Android Studio Unable to find bundled Java version.
 
-![image-20230521190046144](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190046144.png)
+![image-20230521190046144](../image/flutter-assets/image-20230521190046144.png)
 
 #### Android Studio Unable to find bundled Java version 解决方法：
 
@@ -209,13 +213,13 @@ PUB_HOSTED_URL: https://mirrors.tuna.tsinghua.edu.cn/dart-pub
 
 安装cmdline-tools
 
-![image-20230521190134950](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190134950.png)
+![image-20230521190134950](../image/flutter-assets/image-20230521190134950.png)
 
-![image-20230521190145714](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190145714.png)
+![image-20230521190145714](../image/flutter-assets/image-20230521190145714.png)
 
  配置android-licenses
 
-![image-20230521190223815](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190223815.png)
+![image-20230521190223815](../image/flutter-assets/image-20230521190223815.png)
 
 这个时候复制上面红色框框内的命令
 
@@ -225,7 +229,7 @@ flutter doctor --android-licenses
 
 注意：提示输入Y/N的地方全部输入Y
 
-![image-20230521190248805](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190248805.png)
+![image-20230521190248805](../image/flutter-assets/image-20230521190248805.png)
 
 #### 错误二的解决方法安装Visual Studio ：
 
@@ -233,13 +237,13 @@ Visual Studio主要用于flutter 桌面软件开发，如果您只是开发flutt
 
  https://visualstudio.microsoft.com/zh-hans/downloads
 
-![image-20230521190326177](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190326177.png)
+![image-20230521190326177](../image/flutter-assets/image-20230521190326177.png)
 
 如果安装失败可以修改DNS尝试
 
-![image-20230521190343041](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190343041.png)
+![image-20230521190343041](../image/flutter-assets/image-20230521190343041.png)
 
-![image-20230521190354504](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190354504.png)
+![image-20230521190354504](../image/flutter-assets/image-20230521190354504.png)
 
 #### 错误三的解决方法
 
@@ -249,7 +253,7 @@ Android Studio Unable to find bundled Java version 解决方法：
 
  如果是Windows系统，jre目录是存在的，不过里面几乎没东西，可以直接将jbr目录内的全部文件复制 一份到jre目录下即可。
 
-![image-20230521190427710](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190427710.png)
+![image-20230521190427710](../image/flutter-assets/image-20230521190427710.png)
 
 详情参考：http://bbs.itying.com/topic/63eafd840d0a6c0aecbe5436
 
@@ -257,43 +261,43 @@ Android Studio Unable to find bundled Java version 解决方法：
 
 新版Android Studio配置
 
-![image-20230521190457097](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190457097.png)
+![image-20230521190457097](../image/flutter-assets/image-20230521190457097.png)
 
-![image-20230521190506240](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190506240.png)
+![image-20230521190506240](../image/flutter-assets/image-20230521190506240.png)
 
-![image-20230521190515215](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190515215.png)
+![image-20230521190515215](../image/flutter-assets/image-20230521190515215.png)
 
-![image-20230521190524745](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190524745.png)
+![image-20230521190524745](../image/flutter-assets/image-20230521190524745.png)
 
-![image-20230521190534792](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190534792.png)
+![image-20230521190534792](../image/flutter-assets/image-20230521190534792.png)
 
 提示：新版本android studio也可能是下面界面
 
-![image-20230521190553807](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190553807.png)
+![image-20230521190553807](../image/flutter-assets/image-20230521190553807.png)
 
-![image-20230521190603208](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190603208.png)
+![image-20230521190603208](../image/flutter-assets/image-20230521190603208.png)
 
 ### 创建 运行Flutter项目
 
-![image-20230521190649536](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190649536.png)
+![image-20230521190649536](../image/flutter-assets/image-20230521190649536.png)
 
-![image-20230521190658249](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190658249.png)
+![image-20230521190658249](../image/flutter-assets/image-20230521190658249.png)
 
-![image-20230521190707647](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190707647.png)
+![image-20230521190707647](../image/flutter-assets/image-20230521190707647.png)
 
-![image-20230521190716559](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190716559.png)
+![image-20230521190716559](../image/flutter-assets/image-20230521190716559.png)
 
-![image-20230521190725511](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190725511.png)
+![image-20230521190725511](../image/flutter-assets/image-20230521190725511.png)
 
 通过 flutter devices 可以检测检测可用的设备
 
-![image-20230521190744303](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190744303.png)
+![image-20230521190744303](../image/flutter-assets/image-20230521190744303.png)
 
 ### 可能遇到的错误
 
 #### 导入项目提示Gradle相关错误
 
-![image-20230521190809598](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521190809598.png)
+![image-20230521190809598](../image/flutter-assets/image-20230521190809598.png)
 
 
 
@@ -331,25 +335,25 @@ Android Studio Unable to find bundled Java version 解决方法：
 
 #### 使用Android Studio自带模拟器
 
-![image-20230521191040639](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521191040639.png)
+![image-20230521191040639](../image/flutter-assets/image-20230521191040639.png)
 
-![image-20230521191049574](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521191049574.png)
+![image-20230521191049574](../image/flutter-assets/image-20230521191049574.png)
 
-![image-20230521191057944](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521191057944.png)
+![image-20230521191057944](../image/flutter-assets/image-20230521191057944.png)
 
-![image-20230521191106080](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521191106080.png)
+![image-20230521191106080](../image/flutter-assets/image-20230521191106080.png)
 
-![image-20230521191115247](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521191115247.png)
+![image-20230521191115247](../image/flutter-assets/image-20230521191115247.png)
 
-![image-20230521191122800](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521191122800.png)
+![image-20230521191122800](../image/flutter-assets/image-20230521191122800.png)
 
-![image-20230521191131241](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521191131241.png)
+![image-20230521191131241](../image/flutter-assets/image-20230521191131241.png)
 
-![image-20230521191140641](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521191140641.png)
+![image-20230521191140641](../image/flutter-assets/image-20230521191140641.png)
 
-![image-20230521191149136](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521191149136.png)
+![image-20230521191149136](../image/flutter-assets/image-20230521191149136.png)
 
-![image-20230521191202124](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521191202124.png)
+![image-20230521191202124](../image/flutter-assets/image-20230521191202124.png)
 
 ## 创建flutter项目的方式
 
@@ -367,7 +371,7 @@ flutter create <project name>
 
 ### Vscode中安装Flutter插件 Dart插件。
 
-![image-20230521191642686](https://gitee.com/sun-chaoqun/image-bed/raw/master/notepad/image-20230521191642686.png)
+![image-20230521191642686](../image/flutter-assets/image-20230521191642686.png)
 
 ### Vscode中打开flutter项目进行开发
 
