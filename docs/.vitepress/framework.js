@@ -170,5 +170,14 @@ export default [
                 link: "/framework/react/react-router-v6",
             }
         ]
+    },
+    {
+        text: "NextJS",
+        items: [
+            {
+                text: "入门",
+                link: "framework/NextJS/index.md",
+            }
+        ]
     }
 ]
