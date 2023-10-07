@@ -1,4 +1,11 @@
+---
+# 取二三级标题生成目录
+outline: [2,3]
+---
+
 **VS CODE 快速生成 函数式组件：RFC  || 类组件： RCC**
+
+# react
 
 ## create-react-app
 

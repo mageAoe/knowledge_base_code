@@ -1,3 +1,7 @@
+---
+# 取二三级标题生成目录
+outline: [2,3]
+---
 # react hooks
 
 ## userState（保存组件状态）
