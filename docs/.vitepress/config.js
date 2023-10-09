@@ -39,7 +39,7 @@ export default {
     },
     footer: {
         message: 'Released under the MIT License.',
-        copyright: 'Copyright © 2019-present Evan You'
+        copyright: 'Copyright © 2019-present SCQ'
       },
     docFooter: { //上下篇文本
         prev: '上一篇',

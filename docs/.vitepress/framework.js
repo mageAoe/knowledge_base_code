@@ -1,6 +1,8 @@
 export default [
     {
         text: "JavaScript",
+        collapsible: true,
+        collapsed: true,
         items: [
             {
                 text: "入门",
@@ -18,6 +20,8 @@ export default [
     },
     {
         text: "框架",
+        collapsible: true,
+        collapsed: true,
         items: [
             {
                 text: "VUE2",
@@ -75,6 +79,8 @@ export default [
     },
     {
         text: "TypeScript",
+        collapsible: true,
+        collapsed: true,
         items: [
             {
                 text: "入门",
@@ -88,6 +94,8 @@ export default [
     },
     {
         text: "React",
+        collapsible: true,
+        collapsed: true,
         items: [
             {
                 text: "入门",
