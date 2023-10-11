@@ -53,6 +53,10 @@ export default [
             {
                 text: "小程序中使用npm包",
                 link: "/blog/2023/6/10/weichatApp",
+            },
+            {
+                text: "常用插件收集",
+                link: "/blog/2023/10/08/index",
             }
         ],
     }

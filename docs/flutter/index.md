@@ -227,6 +227,10 @@ PUB_HOSTED_URL: https://mirrors.tuna.tsinghua.edu.cn/dart-pub
 flutter doctor --android-licenses
 ```
 
+**注意：** 如果运行上面的命令报错了，那么可能是java JDK版本太低了，需要升级到最新的。没报错就不管
+
+![image-20230521190248805](../image/flutter-assets/image_20231011093754.png)
+
 注意：提示输入Y/N的地方全部输入Y
 
 ![image-20230521190248805](../image/flutter-assets/image-20230521190248805.png)
