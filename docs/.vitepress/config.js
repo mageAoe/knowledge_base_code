@@ -4,6 +4,8 @@ import func from './func'
 import interview from './interview'
 import framework from './framework'
 import algorithm from './algorithm'
+import flutter from './flutter'
+
 export default {
   title: 'knowledge base',
   titleTemplate: '知识库',
@@ -35,7 +37,8 @@ export default {
         "/framework": framework,
         "/func": func,
         "/interview": interview,
-        "/algorithm":  algorithm
+        "/algorithm":  algorithm,
+        "/flutter":  flutter
     },
     footer: {
         message: 'Released under the MIT License.',
