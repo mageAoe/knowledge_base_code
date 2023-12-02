@@ -320,3 +320,51 @@ for (let item of list) {
 let result = [...map.values()]
 ```
 
+## 根据一个主色，生成较浅的颜色
+
+```js
+const colorConfirm = () => {
+  const color = document.getElementById('color').value
+  const colors = []
+  for (let a = 0.0; a <= 1; a += 0.1) {
+    colors.push({
+      opacity: `${(1 - a).toFixed(1) * 100}%`,
+      colorValue: getLightColor(color, a.toFixed(1)), // #6643e5 0.1
+    })
+  }
+  return  colors
+}
+```
+
+## 获取颜色的16进制
+
+```js
+const HexToRgb = (str) => { // return 16进制数据
+  // replace替换查找的到的字符串
+  str = str.replace('#', '')
+  // match得到查询数组
+  const hxs = str.match(/../g)
+  for (let i = 0; i < 3; i++) hxs[i] = parseInt(hxs[i], 16)
+  return hxs
+}
+```
+
+## 获取较浅的颜色 0~1 之间
+
+```js
+const getLightColor = (color, level) => {
+  const rgbc = HexToRgb(color)
+  for (let i = 0; i < 3; i++) { rgbc[i] = Math.floor((255 - rgbc[i]) * level + rgbc[i]) }
+  return RgbToHex(rgbc[0], rgbc[1], rgbc[2])
+}
+```
+
+## 将计算过的颜色值合并
+
+```js
+const RgbToHex = (a, b, c) => {
+  const hexs = [a.toString(16), b.toString(16), c.toString(16)]
+  for (let i = 0; i < 3; i++) if (hexs[i].length === 1) hexs[i] = `0${hexs[i]}`
+  return `#${hexs.join('')}`
+}
+```

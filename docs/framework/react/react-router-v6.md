@@ -36,7 +36,7 @@ outline: [2,3]
 
 ## 用法详解
 
-### 一级路由和多级路由
+### 一级路由
 
 ```tsx
 <Routes>
@@ -50,6 +50,58 @@ outline: [2,3]
 > index 用于嵌套路由，仅匹配父路径时，设置渲染的组件
 >
 > 解决当嵌套路由有多个子路由但本身无法确认默认渲染哪个子路由的时候，可以增加index属性来指定默认路由。index路由和其他路由不同的地方是它没有path属性，他和父路由共享同一个路径
+
+### 多级路由or嵌套路由
+
+> 多级路由 又叫 嵌套路由
+
+```js
+ <Routes>
+    <Route path='/' element={<Main />}>
+      <Route index element={<Home />}></Route>
+      <Route path='/html' element={<HtmlPage />}></Route>
+      <Route path='/js' element={<JsPageWidget />}></Route>
+      <Route path='/css' element={<CssPage />}>
+        <Route index element={<CardsPage />}></Route>
+        <Route path='/css/menu-radius' element={<MenuRadius />}></Route>
+      </Route>
+    </Route>
+  </Routes>
+```
+
+设置二级路由出口 `<Outlet></Outlet>`
+
+> `<Outlet></Outlet>` 跟vue的 `<router-view />` 是一样的用法
+
+```js
+export default function Home() {
+    return (
+        <>
+          <aside>
+              <ul>
+                  <li><NavLink to="/categroy">分类管理</NavLink></li>
+                  <li><NavLink to="/goods">商品管理</NavLink></li>
+              </ul>
+          </aside>
+          <section>
+                 {/* 二级路由出口 */}
+                <Outlet></Outlet>
+          </section>
+        </>
+    )
+}
+```
+
+### 默认路由设置
+
+```js
+<Route path='/' element={<Home/>}>
+  {/*默认二级路由，添加index属性，删除掉path属性*/}
+  <Route index element={<Main/>}></Route>
+  <Route path='category' element={<Category/>}></Route>
+  <Route path='goods' element={<Goods/>}></Route>
+</Route>
+```
 
 ### 路由重定向
 
@@ -141,6 +193,15 @@ searchParams.has('id')
 // 同时页面内也可以用set方法来改变路由
 setSearchParams({id: 2})
 
+```
+
+如果在跳转时不想加历史记录，可以添加额外参数replace为true
+
+```js
+ const register=(e)=>{
+    e.preventDefault()
+    navigate('/login',{replace:true})
+  }
 ```
 
 ### 动态路由
@@ -299,3 +360,150 @@ export default function IndexRouter () {
 }
 ```
 
+## 补充
+
+### 路由配置
+
+1）首先在react项目的入口文件index.js文件中，在APP.tsx`<App>`中使用`<BrowserRouter>`
+
+```js
+import {BrowserRouter} from 'react-router-dom'
+​
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <BrowserRouter>
+        <Routes></Routes>
+    </BrowserRouter> 
+    // or
+    <HashRouter>
+      <Routes></Routes>
+    </HashRouter>
+);
+```
+
+BrowserRouter：包裹这个应用，一个React应用只需使用一次
+
+在 React Router 中提供了两种路由模式：hash 和 history。
+
+对应的的路由组件分别是：
+
+HashRouter：hash 模式的路由
+
+BrowserRouter：history 模式的路由
+
+实际使用时，任选其中一个模式引入即可
+
+### 路由传参
+
+1、searchParams传参
+实现步骤
+
+传参
+
+```js
+import {useNavigate} from 'react-router-dom'
+export default function CategroyList() {
+  let navigate=useNavigate();
+  return (
+    <div>
+        <h2>CategroyList</h2>
+        <button onClick={()=>{navigate('/categroyDetail?id=12')}}>详情</button>
+    </div>
+  )
+}
+```
+获取参数
+
+```js
+import {useSearchParams} from 'react-router-dom'
+ 
+export default function CategoryDetail() {
+  let [params]=useSearchParams()
+  return (
+    <div>
+        <h2>CategroyDetail</h2>
+        <div>
+            ID:{params.get('id')}
+        </div>
+    </div>
+  )
+}
+```
+2、params传参
+实现步骤
+
+路由设置
+
+```js
+ <BrowserRouter>
+     <Routes>
+        <Route path='/home' element={<Layout/>}>
+           <Route path='categroy-detail/:id' element={<CategoryDetail/>}></Route>
+         </Route>
+      </Routes>
+ </BrowserRouter>
+```
+
+传参
+
+```js
+import {useNavigate} from 'react-router-dom'
+export default function CategroyList() {
+  let navigate=useNavigate();
+  return (
+    <div>
+        <h2>CategroyList</h2>
+        <button onClick={()=>{navigate('/home/categroy-detail/13')}}>详情</button>
+    </div>
+  )
+}
+```
+获取参数
+
+```js
+import React from 'react'
+import {useParams} from 'react-router-dom'
+ 
+export default function CategoryDetail() {
+  let params=useParams()
+  return (
+    <div>
+        <h2>CategroyDetail</h2>
+        <div>
+            ID:{params.id}
+        </div>
+    </div>
+  )
+}
+```
+
+### 解决路由闪屏
+
+配置完路由懒加载后出现当进行路由跳转时，出现闪屏现象，要向解决这个问题可以使用 react-loadable插件进行解决
+
+先下载react-loadable依赖包
+
+> yarn add react-loadable
+建立一个`loadable.js`，放在`src/utils/loadable.js`
+
+```js
+import Loadable from 'react-loadable';
+export default function withLoadable(comp) {
+    return Loadable({
+    	//懒加载组件页面
+        loader: comp,
+        loading: () => null,
+        delay: "",
+    })
+}
+
+```
+
+修改`router/index.js`
+
+```js
+import loadable from '../utils/loadable'
+const Main=loadable(()=>import('../pages/Home/Main'))
+
+<Route path='/' element={<Main />}>
+```
