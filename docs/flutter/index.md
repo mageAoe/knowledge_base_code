@@ -1,3 +1,8 @@
+---
+# 取二三级标题生成目录
+outline: [2,3]
+---
+
 # flutter
 
 ## 安装 dart运行环境
@@ -216,6 +221,11 @@ PUB_HOSTED_URL: https://mirrors.tuna.tsinghua.edu.cn/dart-pub
 ![image-20230521190134950](../image/flutter-assets/image-20230521190134950.png)
 
 ![image-20230521190145714](../image/flutter-assets/image-20230521190145714.png)
+
+- <span style='color:red'>在Android Studio里面如果安装完cmdline-tools后，运行flutter doctor还是出现这个错误的话，那么就是你改变了Android sdk位置，需要重新配置一下</span>
+ ```shell
+  flutter config --android-sdk D:\Android\SDK
+ ```
 
  配置android-licenses
 
