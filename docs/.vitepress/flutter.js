@@ -23,20 +23,104 @@ export default [
             link: "/flutter/three",
           },
           {
-            text: "ListView、GridView、row、column、flex、expanded、Stack、Align、 Positioned组件",
-            link: "/flutter/four",
+            text: "ListView组件",
+            link: "/flutter/ListView",
           },
           {
-            text: "AspectRatio、Card、按钮、Wrap、StatelessWidget 、 StatefulWidget、Scaffold属性 BottomNavigationBar 自定义底部导航、Scaffold属性 FloatingActionButton实现类似闲鱼App底 部导航凸起按钮",
-            link: "/flutter/five",
+            text: "GridView组件",
+            link: "/flutter/GridView",
           },
           {
-            text: "Drawer、AppBar TabBar TabBarView、路由、Dialog、PageView",
-            link: "/flutter/six",
+            text: "Row_Column组件",
+            link: "/flutter/Row_Column",
           },
           {
-            text: "Key详解、AnimatedList 实现动态列表、Flutter 动画原理、Flutter隐式动画、显示动画、Animated动画以及交错式动画、Hero动画结合photo_view实现类似朋友圈的图片预览、滑动、放大、缩小",
-            link: "/flutter/seven",
+            text: "Flex_Expanded组件",
+            link: "/flutter/Flex_Expanded",
+          },
+          {
+            text: "Stack_Align_Positioned组件",
+            link: "/flutter/Stack_Align_Positioned",
+          },
+          {
+            text: "FlutterMediaQuery",
+            link: "/flutter/FlutterMediaQuery",
+          },
+          {
+            text: "AspectRatio_CircleAvatar组件",
+            link: "/flutter/AspectRatio_CircleAvatar",
+          },
+          {
+            text: "Card组件",
+            link: "/flutter/Card",
+          },
+          {
+            text: "Button组件",
+            link: "/flutter/Button",
+          },
+          {
+            text: "Wrap组件",
+            link: "/flutter/Wrap",
+          },
+          {
+            text: "StatelessWidget_StatefulWidget组件",
+            link: "/flutter/StatelessWidget_StatefulWidget",
+          },
+          {
+            text: "BottomNavigationBar_FloatingActionButton组件",
+            link: "/flutter/BottomNavigationBar_FloatingActionButton",
+          },
+          {
+            text: "Drawer组件",
+            link: "/flutter/Drawer",
+          },
+          {
+            text: "AppBar_TabBar_TabBarView组件",
+            link: "/flutter/AppBar_TabBar_TabBarView",
+          },
+          {
+            text: "preferredSize_KeepAliveWrapper组件",
+            link: "/flutter/preferredSize_KeepAliveWrapper",
+          },
+          {
+            text: "router",
+            link: "/flutter/router",
+          },
+          {
+            text: "MaterialApp",
+            link: "/flutter/MaterialApp",
+          },
+          {
+            text: "Dialog_Toast组件",
+            link: "/flutter/Dialog_Toast",
+          },
+          {
+            text: "自定义Flutter Dialog",
+            link: "/flutter/Dialog_Material组件_InkWell",
+          },
+          {
+            text: "timer定时器",
+            link: "/flutter/timer",
+          },
+          {
+            text: "PageView_AutomaticKeepAliveClientMixin组件",
+            link: "/flutter/PageView_AutomaticKeepAliveClientMixin",
+          },
+          {
+            text: "PageController_animateToPage",
+            link: "/flutter/PageController_animateToPage",
+          },
+          {
+            text: "Key详解",
+            link: "/flutter/Key",
+          },
+          {
+            text: "AnimatedList",
+            link: "/flutter/AnimatedList",
+          },
+          {
+            text: "Animated动画",
+            link: "/flutter/Animated",
           },
           {
             text: "GETX",
